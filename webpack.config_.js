@@ -13,8 +13,8 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     },
     entry: [
-        'webpack-dev-server/client?http://localhost:8000',
-        'webpack/hot/dev-server',
+        'webpack-dev-server/client?http://127.0.0.1:8000',
+        'webpack/hot/only-dev-server',
         './src/index'
     ],
     output: {
@@ -23,12 +23,13 @@ module.exports = {
         publicPath: '/assets/',
     },
     devServer: {
+        historyApiFallback: true,
         hot: true,
         port: 8000,
         publicPath: '/assets/',
         noInfo: false
     },
-    devtool: 'eval',
+    devtool: 'cheap-eval-source-map',
     module: {
         loaders: [
             {
@@ -43,7 +44,6 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loaders: [
-                    'react-hot',
                     'babel-loader'
                 ]
             },

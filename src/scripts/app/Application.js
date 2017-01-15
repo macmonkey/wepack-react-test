@@ -3,8 +3,11 @@
  */
 import React from 'react';
 
+import TodoView from '../components/TodoView';
+
 class App extends React.Component {
-    constructor() {
+    constructor()
+    {
         super();
 
 
@@ -15,12 +18,20 @@ class App extends React.Component {
 
         return (
             <div className="App">
-               <h1>Test Test Test</h1>
+                <TodoView items={ITEMS}/>
             </div>
         );
     }
 }
 
 
-
 export default App;
+
+let ITEMS = [
+    {"name": 'John'},
+    {"name": 'John'},
+    {"name": 'John'},
+    {"name": 'John'},
+    {"name": 'John'},
+    {"name": 'Egon'}
+];

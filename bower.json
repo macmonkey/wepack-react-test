@@ -1,0 +1,13 @@
+{
+  "name": "webpack-test",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Gorilla <gorilla@macmonkey.de>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "gsap": "^1.19.0"
+  }
+}

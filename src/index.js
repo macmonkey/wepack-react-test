@@ -9,5 +9,6 @@ import Application from './scripts/app/Application';
 
 ReactDOM.render(
     <Application />,
-    document.getElementById('mount'));
+    document.getElementById('mount')
+);
 
